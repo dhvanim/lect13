@@ -13,6 +13,8 @@ KEY_EXPECTED = "expected"
 KEY_LENGTH = "length"
 KEY_FIRST_WORD = "first_word"
 KEY_SECOND_WORD = "second_word"
+KEY_THIRD_WORD = "third_word"
+KEY_FOURTH_WORD = "fourth_word"
 
 class SplitTestCase(unittest.TestCase):
     def setUp(self):
@@ -20,7 +22,7 @@ class SplitTestCase(unittest.TestCase):
             {
                 KEY_INPUT: "Childish Gambino",
                 KEY_EXPECTED: {
-                    KEY_LENGTH: 3,
+                    KEY_LENGTH: 2,
                     KEY_FIRST_WORD: "Childish",
                     KEY_SECOND_WORD: "Gambino",
                 }
@@ -30,7 +32,9 @@ class SplitTestCase(unittest.TestCase):
                 KEY_EXPECTED: {
                     KEY_LENGTH: 4,
                     KEY_FIRST_WORD: "Bone",
-                    KEY_SECOND_WORD: "Thigs",
+                    KEY_SECOND_WORD: "Thugs",
+                    KEY_THIRD_WORD: "N'",
+                    KEY_FOURTH_WORD: "Harmony",
                 }
             }
             # TODO add another
@@ -47,8 +51,9 @@ class SplitTestCase(unittest.TestCase):
             {
                 KEY_INPUT: "Tupac Shakur",
                 KEY_EXPECTED: {
-                    KEY_LENGTH: 2,
-                    KEY_FIRST_WORD: "Tupac",
+                    KEY_LENGTH: 256,
+                    KEY_FIRST_WORD: "Tupfgdac",
+                    
                 }
             }
             # TODO add another
